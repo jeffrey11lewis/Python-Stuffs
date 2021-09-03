@@ -1,4 +1,4 @@
-print('hello')
+print('Enter Your First Name, Last Name, and Full Social ;)')
 
 string_1 = input()
 string_1 = string_1.split(' ')
