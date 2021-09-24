@@ -1,3 +1,4 @@
+
 import random
 
 class GVDie:  
@@ -38,3 +39,9 @@ if __name__ == "__main__":
     val = int(input())
     rolls = rolling_for_pair(die1, die2, val) # Should return the number of rolls to reach total.
     print('It took {} rolls to get a pair of {}\'s.'.format(rolls, val))
+
+
+
+""" from vendingMachine import VendingMachine
+theMachine = VendingMachine()
+theMachine.report() """

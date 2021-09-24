@@ -30,7 +30,7 @@ def roll_total(die, total):
 if __name__ == "__main__":
     die = GVDie()   # Create a GVDie object
     die.set_seed(15)   # Set the GVDie object with seed value 15
-    print('in this program, one die is created.\n this die is rolled a certain number of times to reach the expected end result. \n enter the number you want to roll to:') 
+    print('in this program, one die is created.\nthis die is rolled a certain number of times to reach the expected end result. \nenter the number you want to roll to:') 
     total = int(input())
     rolls = roll_total(die, total) # Should return the number of rolls to reach total.
     print('Number of rolls to reach at least {}: {}'.format(total, rolls))
