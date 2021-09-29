@@ -1,4 +1,5 @@
 if __name__ == "__main__":
+    
     from vendingMachineExtension import VendingMachine
     #  Create VendingMachine object
     theMachine = VendingMachine()
