@@ -6,7 +6,7 @@ def greetUser():
     print("hello user")
 
 def generateRandomNumber():
-    random.seed(900)
+    random.randint(1,101)
     ourRandomNumber = random.randint(1,101)
     return ourRandomNumber
 
@@ -22,19 +22,22 @@ def wasAnswerCorrect(ourRandomNumber, userGuess):
     if(int(ourRandomNumber) == int(userGuess)):    
         
         print('you are correct')
-        #return userWasRight
+        exit()
+
+        
        
 
     else:
-        print('you were not correct.')
+        print('')
 
 def giveUserAHint(ourRandomNumber, userGuess):
     if(int(ourRandomNumber) > int(userGuess)):
         print('your number was too low.')
-        print('try again:')
-        #returnToThis()
+       # print('try again:')
+        #anotherGuess = input()
+       # return anotherGuess
     
     if (int(ourRandomNumber) < int(userGuess)):
         print('your number was too high.')
-        print('try again:')
-        getUserGuess()
+        #print('try again:')
+        #getUserGuess()

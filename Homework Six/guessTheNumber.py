@@ -15,15 +15,18 @@ userWasRight = True
 
 
 userGuess = generateRandomNumber.getUserGuess()
-def returnToThis():
 
-    while (userWasRight):
+while (userWasRight):
+   
+    #print('your guess was: ', str(userGuess))
+    userWasRight = generateRandomNumber.wasAnswerCorrect(ourRandomNumber, userGuess)
     
-        print('your guess was: ', str(userGuess))
-        userWasRight = generateRandomNumber.wasAnswerCorrect(ourRandomNumber, userGuess)
 
-        
+    
 
-    if not userWasRight:
-        generateRandomNumber.giveUserAHint(ourRandomNumber, userGuess)
-        userWasRight = False
+while not userWasRight:
+    generateRandomNumber.giveUserAHint(ourRandomNumber, userGuess)
+    userWasRight = generateRandomNumber.wasAnswerCorrect(ourRandomNumber, userGuess)
+    userGuess = generateRandomNumber.getUserGuess()
+    
+    
