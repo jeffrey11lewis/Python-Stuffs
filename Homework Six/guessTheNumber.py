@@ -18,7 +18,6 @@ userGuess = generateRandomNumber.getUserGuess()
 
 while (userWasRight):
    
-    #print('your guess was: ', str(userGuess))
     userWasRight = generateRandomNumber.wasAnswerCorrect(ourRandomNumber, userGuess)
     
 
