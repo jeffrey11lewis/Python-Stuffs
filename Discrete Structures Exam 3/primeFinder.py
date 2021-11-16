@@ -17,7 +17,7 @@ def countPrimesLessThan(numberRange):
     print('we want to know how many numbers less than ', numberRange, ' are prime.')
 
     numberOfPrimes = 0
-    for numberToCheck in range(2, numberRange):
+    for numberToCheck in range(2, numberRange +1):
             print('we are looking at ', numberToCheck)
             if isNumberPrime(numberToCheck):
                 print("confirmed we have a prime")
